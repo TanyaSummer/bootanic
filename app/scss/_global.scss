@@ -1,8 +1,7 @@
-/************reset***************/
-
-
-
-
+html,
 body{
-
+  height: 100%;
+}
+.title{
+  @extend %ptsans-700;
 }
