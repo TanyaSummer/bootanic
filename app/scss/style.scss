@@ -3,4 +3,181 @@
 @import 'reset';/*сюда пишу reset.css*/
 @import 'global';/*что я пишу для body, для ссылок и т.д*/
 @import 'media'; /*медиазапросы*/
+@import 'libs'; /*медиазапросы*/
+
+
+
+
+.product-item{
+  max-width: 400px;
+  &__img-box{
+    position: relative;
+    width: 400px;
+    height: 260px;
+      &::before{
+      content: 'Хит продаж';
+      position: absolute;
+      top: 0;
+      left: 0;
+      @extend %montserrat-600;
+      font-size: 11px;
+      background-color:#67A030;
+      padding: 9px 10px 9px 35px;
+      color: #fff;
+      background-image: url('../images/icon/star.svg');
+      background-repeat: no-repeat;
+      background-position-x: 10px;
+      background-position-y: 6px;
+      }
+      &::after{
+        content: '16%';
+        position: absolute;
+        top: 0;
+        right: 0;
+        @extend %montserrat-600;
+        font-size: 11px;
+        background-color:#67A030;
+        padding: 9px 10px;
+        color: #fff;
+      }
+  }
+  &__img-box-new::before{
+    content: 'Новинка';
+    position: absolute;
+    top: 38px;
+    left: 0;
+    @extend %montserrat-600;
+    font-size: 11px;
+    background-color:#67A030;
+    padding: 9px 10px 9px 35px;
+    color: #fff;
+    background-image: url('../images/icon/new.svg');
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    }
+  &__img-box-stock::before{
+    content: 'АКЦИЯ';
+    position: absolute;
+    top: 76px;
+    left: 0;
+    @extend %montserrat-600;
+    font-size: 11px;
+    background-color:#67A030;
+    padding: 9px 10px 9px 35px;
+    color: #fff;
+    background-image: url('../images/icon/stock.svg');
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+  }
+  &__title{
+    color: $black;
+    @extend %montserrat-600;
+    margin-right: 40px;
+    margin-bottom: 15px;
+  }
+}
+.product-filter{
+  &__range{
+    text-align: center;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 4px 5px #ECECEC;
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+  &__range-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  &__range-input+.product-filter__range-checkbox-text{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  &__range-input + .product-filter__range-checkbox-text::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $black;
+    border-radius: 0px;
+    margin-right: 13px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__range-input:checked + .product-filter__range-checkbox-text::before{
+    background-image: url('../images/icon/check.svg');
+  }
+  &__box{
+    margin-bottom: 15px;
+  }
+  &__box-text{
+    @extend %montserrat-500;
+    display: block;
+    margin-bottom: 7px;
+  }
+  &__box-input{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+  }
+  &__box-check{
+    display: inline-block;
+    padding: 4px 21px 4px 0;
+  }
+  &__box-input:checked + &__box-check {
+    color: #67A030;
+  }
+  &__price {
+    margin-top: 26px;
+    margin-bottom: 19px;
+  }
+  &__price-text,
+  &__price-new{
+    font-size: 16px;
+    @extend %montserrat-600;
+  }
+  &__price-text{
+    margin-right: 20px;
+  }
+  &__cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn{
+    background-color: $green;
+    padding: 11px 24px;
+    border: none;
+    color: #fff;
+    @extend %montserrat-600;
+  }
+  &__link{
+    color: $light-grey;
+    text-decoration: underline;
+  }
+}
+.jq-ry-group-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.jq-ry-rated-group.jq-ry-group {
+  position: absolute;
+  top: 0;
+}
+.star{
+  margin: 15px 0;
+}
+
+
+
+
+
+
 

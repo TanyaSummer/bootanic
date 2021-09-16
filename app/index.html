@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
   <section class="product">
@@ -13,80 +14,781 @@
       <h3 class="title">
         Хиты продаж
       </h3>
-      <div class="product-items">
-        <div class="product-item">
-          <div class="product-item__img-box">
-            <img class="product-item__image" src="#" alt=" product image">
-            <div class="product-filter__range">
-              <input class="product-filter__range-checkbox" type="checkbox" >
-              <span class="product-filter__range-checkbox-text">
-                Добавить в сравнение
-              </span>
+      <div class="product-items__inner">
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
             </div>
-            <a class="product-item__title" href="#">
-              Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
-            </a>
-            <div class="star"></div>
-            <div class="product-filter__size">
-              <span class="product-filter__size-checkbox-text">
-                Выберите длину
-              </span>
-              <label>
-                <input class="product-filter__size-input" type="radio" name="size">
-                <span class="product-filter__size-checkbox">4 метра</span>
-              </label>
-              <label>
-                <input class="product-filter__size-input" type="radio" name="size">
-                <span class="product-filter__size-checkbox">6 метров</span>
-              </label>
-              <label>
-                <input class="product-filter__size-input" type="radio" name="size">
-                <span class="product-filter__size-checkbox">8 метров</span>
-              </label>
-              <label>
-                <input class="product-filter__size-input" type="radio" name="size">
-                <span class="product-filter__size-checkbox">10 метров</span>
-              </label>
-            </div>
-            <div class="product-filter__type">
-              <span class="product-filter__type-checkbox-text">
-                Выберите поликарбонат
-              </span>
-              <label>
-                <input class="product-filter__type-input" type="radio" name="size">
-                <span class="product-filter__type-checkbox">“Master” 4 мм</span>
-              </label>
-              <label>
-                <input class="product-filter__type-input" type="radio" name="size">
-                <span class="product-filter_typee-checkbox">“Скарб” 4 мм</span>
-              </label>
-            </div>
-            <div class="product-filter__width">
-              <span class="product-filter__width-checkbox-text">
-                Расстояние между дугами
-              </span>
-              <label>
-                <input class="product-filter__width-input" type="radio" name="size">
-                <span class="product-filter__width-checkbox">0,67 метра</span>
-              </label>
-              <label>
-                <input class="product-filter__width-input" type="radio" name="size">
-                <span class="product-filter_twidth-checkbox">1 метр</span>
-              </label>
-            </div>
-            <div class="product__price">
-              <span class="product__price-tex">
-                Цена
-              </span>
-              <span class="product__price-new">
-                820
-              </span>
-            </div>
-            <button class="product__btn" type="submit">
-              В корзину
-            </button>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
           </div>
         </div>
+  
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+  
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+  
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+  
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+  
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+  
+        <div class="product-items">
+          <div class="product-item">
+            <div class="product-item__img-box">
+              <div class="product-item__img-box-new">
+              </div>
+              <div class="product-item__img-box-stock">
+              </div>
+              <img class="product-item__image" src="images/product/1.jpg" alt=" product image">
+            </div>
+              <div class="product-filter__range">
+                <label>
+                  <input class="product-filter__range-input" type="checkbox" name="range">
+                  <span class="product-filter__range-checkbox-text">
+                    Добавить в сравнение
+                  </span>
+                </label>
+              </div>
+              <a class="product-item__title" href="#">
+                Теплицы Ботаник ТЮЛЬПАН ПРЕМИУМ АНТИШТОРМ 
+              </a>
+              <div class="star" data-rateyo-rating="5"></div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите длину
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">4 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">6 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">8 метров</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">10 метров</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Выберите поликарбонат
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Master” 4 мм</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">“Скарб” 4 мм</span>
+                </label>
+              </div>
+              <div class="product-filter__box">
+                <span class="product-filter__box-text">
+                  Расстояние между дугами
+                </span>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">0,67 метра</span>
+                </label>
+                <label>
+                  <input class="product-filter__box-input" type="radio" name="size">
+                  <span class="product-filter__box-check">1 метр</span>
+                </label>
+              </div>
+              <div class="product-filter__price">
+                <span class="product-filter__price-text">
+                  Цена
+                </span>
+                <span class="product-filter__price-new">
+                  820
+                </span>
+              </div>
+              <div class="product-filter__cart">
+                <button class="product-filter__btn" type="submit">
+                  В корзину
+                </button>
+                <a class="product-filter__link" href="#">Подробнее</a>
+              </div>
+            
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>

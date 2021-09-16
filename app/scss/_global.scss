@@ -1,7 +1,17 @@
 html,
 body{
   height: 100%;
+  @extend %montserrat-400;
+  color: $black;
+  font-size: 15px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .title{
   @extend %ptsans-700;
+  text-align: center;
+  margin-bottom: 60px;
 }
