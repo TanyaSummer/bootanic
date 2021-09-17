@@ -6,14 +6,68 @@
 @import 'libs'; /*медиазапросы*/
 
 
-
+.product-items{
+  &__slider{
+    .slick-arrow{
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      outline: none;
+      path{
+        fill:#E0E0E0;
+      }
+    }
+    .slick-prev{
+      left: -53px;
+    }
+    .slick-next{
+      right: -53px;
+    }
+    .slick-disabled{
+      path{
+        fill:#F1F1F1;
+      }
+    }
+    .slick-dots{
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 71px;
+      li button{
+        border: none;
+        background-color: transparent;
+      }
+      li.slick-active{
+        font-size: 18px;
+      }
+    }
+    .prev-btn img{
+      margin-right: 25px;
+    }
+    .next-btn img{
+      margin-left: 25px;
+    }
+  }
+}
+// .slick-slide{
+//   margin-right: 0px;
+// }
+// .slick-slide:nth-child(3n){
+//   padding-right: 0px;
+// }
 
 .product-item{
   max-width: 400px;
+  margin: 0 15px;
   &__img-box{
     position: relative;
-    width: 400px;
-    height: 260px;
+    max-width: 400px;
       &::before{
       content: 'Хит продаж';
       position: absolute;
@@ -96,6 +150,9 @@
     align-items: center;
     user-select: none;
   }
+  &__range-checkbox-text{
+    cursor: pointer;
+  }
   &__range-input + .product-filter__range-checkbox-text::before{
     content: '';
     display: inline-block;
@@ -130,6 +187,7 @@
   &__box-check{
     display: inline-block;
     padding: 4px 21px 4px 0;
+    cursor: pointer;
   }
   &__box-input:checked + &__box-check {
     color: #67A030;
@@ -157,6 +215,7 @@
     border: none;
     color: #fff;
     @extend %montserrat-600;
+    cursor: pointer;
   }
   &__link{
     color: $light-grey;
