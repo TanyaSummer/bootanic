@@ -5,7 +5,9 @@
 
 @import 'libs'; /*медиазапросы*/
 
-
+.product{
+  margin-top: 20px;
+}
 .product-items{
   &__slider{
     .slick-arrow{
