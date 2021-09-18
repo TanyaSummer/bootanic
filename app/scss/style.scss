@@ -2,7 +2,7 @@
 @import 'fonts';
 @import 'reset';/*сюда пишу reset.css*/
 @import 'global';/*что я пишу для body, для ссылок и т.д*/
-@import 'media'; /*медиазапросы*/
+
 @import 'libs'; /*медиазапросы*/
 
 
@@ -22,10 +22,10 @@
       }
     }
     .slick-prev{
-      left: -53px;
+      left: -60px;
     }
     .slick-next{
-      right: -53px;
+      right: -60px;
     }
     .slick-disabled{
       path{
@@ -55,16 +55,13 @@
     }
   }
 }
-// .slick-slide{
-//   margin-right: 0px;
-// }
-// .slick-slide:nth-child(3n){
-//   padding-right: 0px;
-// }
 
 .product-item{
   max-width: 400px;
-  margin: 0 15px;
+  margin: 0 auto;
+  &__image{
+    min-width: 400px;
+  }
   &__img-box{
     position: relative;
     max-width: 400px;
@@ -186,23 +183,54 @@
   }
   &__box-check{
     display: inline-block;
-    padding: 4px 21px 4px 0;
+    padding: 0 3px;
+    margin-right: 18px;
     cursor: pointer;
   }
-  &__box-input:checked + &__box-check {
-    color: #67A030;
+  &__box-input:checked + &__box-check{
+    background-color: #EDF6E8;
   }
   &__price {
     margin-top: 26px;
     margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
   }
   &__price-text,
   &__price-new{
     font-size: 16px;
     @extend %montserrat-600;
   }
-  &__price-text{
+  &__price-box {
+    line-height: 32px;
+  }
+  &__price-new--unavailable,
+  &__price-old--unavailable{
+    color: $light-grey;
+  }
+  &__price-new--hot{
+    color: $red;
+  }
+  &__price-old--unavailable{
+    position: relative;
+  }
+  &__price-old--unavailable::before{
+    border-bottom: 1px solid $light-grey;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: rotate(-5deg);
+  }
+  &__like-link--unavailable{
+    display: none;
+  }
+  &__price-text,
+  &__price-new{
     margin-right: 20px;
+  }
+  &__like-link{
+    margin-right: 30px;
   }
   &__cart{
     display: flex;
@@ -211,6 +239,7 @@
   }
   &__btn{
     background-color: $green;
+    box-shadow: inset 0px 0px 10px #86D35F;
     padding: 11px 24px;
     border: none;
     color: #fff;
@@ -220,6 +249,11 @@
   &__link{
     color: $light-grey;
     text-decoration: underline;
+  }
+  &__status{
+    text-decoration: underline;
+    color: $black;
+    @extend %montserrat-600;
   }
 }
 .jq-ry-group-wrapper {
@@ -234,7 +268,7 @@
   margin: 15px 0;
 }
 
-
+@import 'media'; /*медиазапросы*/
 
 
 
